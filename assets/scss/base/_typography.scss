@@ -4,9 +4,7 @@ body {
     font-size: 16px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    @media #{$info-tablet-horizontal} {
-        font-size: 15px;
-    }
+    
     @media #{$res1024} {
         .banner .banner__content .banner__content__top {
             p {
@@ -15,35 +13,6 @@ body {
             h1 {
                 font-size: 100px;
             }
-        }
-    }
-    @media #{$info-tablet-vertical} {
-        font-size: 14px;
-    }
-    @media #{$info-phone} {
-        .banner .banner__content .banner__content__top {
-            p {
-                font-size: 40px;
-            }
-            h1 {
-                font-size: 70px;
-            }
-        }
-    }
-    @media #{$info-phone-4} {
-        .banner .banner__content .banner__content__top {
-            p {
-                font-size: 30px;
-            }
-            h1 {
-                font-size: 40px;
-            }
-        }
-        .header .header__menu-icon {
-            margin: 0;
-        }
-        .header .header__menu-icon .header__menu-item {
-            margin: 0 10px 0 0;
         }
     }
 }
