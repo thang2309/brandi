@@ -20,7 +20,6 @@ $color-danger: #f54747;
 $whiteish: #f2f2f2;
 $pink: #E96F92;
 $purple: #75517D;
-$green: #54fad4;
 //options
 $duration: 0.8s;
 $ease-in-out: cubic-bezier(0.445, 0.050, 0.550, 0.950);
@@ -28,6 +27,15 @@ $ease-in: cubic-bezier(0.470, 0.000, 0.745, 0.715);
 $ease-out: cubic-bezier(0.390, 0.575, 0.565, 1.000);
 $size: 20px;
 $hsize: $size/2;
+
+//
+$bluedark : #546365; //header
+$bluedark-1 : #56706a; //banner icon
+$text-banner : #0ed691;
+$green : #0eb493;
+$green-hover: #22b798;
+$green-background-hover-icon: #12806a;
+$green-footer : #1ea78d;
 //
 // Fonts size
 //
@@ -36,17 +44,17 @@ $hsize: $size/2;
 //
 //$info-phone-horizontal: "only screen and (max-width : 767px)";
 //$info-phone: "only screen and (max-width : 640px)";
-$res1200: "only screen and (max-width : 1200px)";
+// $res1200: "only screen and (max-width : 1200px)";
 $info-tablet-horizontal: "only screen and (max-width : 1160px)";
-$res974: "only screen and (max-width : 974px)";
+// $res974: "only screen and (max-width : 974px)";
 $info-tablet-vertical: "only screen and (max-width : 900px)";
 $info-phone: "only screen and (max-width : 767px)";
 $info-phone-4: "only screen and (max-width : 320px)";
-$res800: "only screen and (max-width : 800px)";
-$res1350: "only screen and (max-width : 1350px)";
-$res1550: "only screen and (max-width : 1550px)";
-$res1024: "only screen and (max-width : 1024px)";
-$res950: "only screen and (max-width : 950px)";
-$res700: "only screen and (max-width : 700px)";
-$res370: "only screen and (max-width : 370px)";
+// $res800: "only screen and (max-width : 800px)";
+// $res1350: "only screen and (max-width : 1350px)";
+// $res1550: "only screen and (max-width : 1550px)";
+// $res1024: "only screen and (max-width : 1024px)";
+// $res950: "only screen and (max-width : 950px)";
+// $res700: "only screen and (max-width : 700px)";
+// $res370: "only screen and (max-width : 370px)";
 $primary-green: #0eb493;
