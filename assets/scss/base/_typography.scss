@@ -5,16 +5,16 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     
-    @media #{$res1024} {
-        .banner .banner__content .banner__content__top {
-            p {
-                font-size: 40px;
-            }
-            h1 {
-                font-size: 100px;
-            }
-        }
-    }
+    // @media #{$res1024} {
+    //     .banner .banner__content .banner__content__top {
+    //         p {
+    //             font-size: 40px;
+    //         }
+    //         h1 {
+    //             font-size: 100px;
+    //         }
+    //     }
+    // }
 }
 
 .wrapper {

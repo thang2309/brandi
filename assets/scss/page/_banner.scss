@@ -1,0 +1,89 @@
+.banner{
+  font-family: 'Open Sans', sans-serif;
+
+  img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .banner__content{
+    position: absolute;
+    color: #fff;
+    bottom: 22%;
+    h2{
+      font-size: 4.2vw;
+      font-weight: 300;
+      span{
+        font-weight: bold;
+      }
+    }
+    p{
+      font-size: 4vw;
+      font-weight: 300;
+      line-height: 1.5;
+      padding-bottom: 15px;
+      @media #{$info-phone} {
+        padding-bottom: 0;
+      }
+      span{
+        color: $text-banner;
+      }
+    }
+    .banner__content-border{
+      position: relative;
+      font-size: 1.8vw;
+      &::before{
+        content: '';
+        position: absolute;
+        left: -16%;
+        top: 52%;
+        width: 30px;
+        height: 1px;
+        background-color: $text-banner;
+        @media #{$info-phone} {
+          width: 15px;
+          left: -20%;
+
+        }
+      } 
+      &::after{
+        content: '';
+        position: absolute;
+        right:  -16%;
+        top: 52%;
+        width: 30px;
+        height: 1px;
+        background-color: $text-banner;
+        @media #{$info-phone} {
+          width: 15px;
+          right:  -20%;
+
+        }
+      }
+      
+    }
+  }
+  ul{
+    position: absolute;
+    bottom: 7%;
+    display: flex;
+    li{
+      margin: 0 8px;
+      a{
+        color: #57716a;
+        transition: .4s;
+        &:hover{
+          color: #fff;
+          transition: .4s;
+        }
+        i{
+          @media #{$info-phone} {
+            font-size: 2.5vw;
+          }
+        }
+      }
+    }
+  }
+}

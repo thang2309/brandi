@@ -1,0 +1,22 @@
+{
+  "name": "brandi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thang2309/brandi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thang2309/brandi/issues"
+  },
+  "homepage": "https://github.com/thang2309/brandi#readme",
+  "dependencies": {
+    "swiper": "^6.4.5"
+  }
+}

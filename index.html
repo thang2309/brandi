@@ -19,37 +19,204 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
-
+ 
 <body>
 
 
-  <header>
-      <div class="header">
-        <div class="logo">
-          <h1>Brandi</h1>
+  <header >
+     <div class="container">
+       <div class="header">
+        <div class="header__logo">
+          <h1><a href="#">Brandi</a></h1>
           <span>I'am your tag line</span>
         </div>
-        <div class="menu">
+        <input type="checkbox" id="chk">
+        <div class="header__menu">
           <ul>
+            
             <li><a href="#">Home</a></li>
             <li><a href="#">Feartures</a></li>
             <li><a href="#">Works</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Contact</a></li>
+            
+          </ul>
+          <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-times"></i>
+          </label>
+      </div>
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+      </div>
+  </header>
+  <main>
+    <div class="banner">
+      
+       <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/img/banner-01.png" alt="">
+          <div class="banner__content">
+            <h2>Meet <span>Brandi</span>!</h2>
+            <p><span>/creative</span> one page template.</p>
+            <span class="banner__content-border">We are a team of professional</span>
+          </div>
+          <ul>
+            <li>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <i class="fab fa-google-plus-g"></i>
+                
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <i class="fab fa-dribbble"></i>
+                
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/banner-02.png" alt="">
+          <div class="banner__content">
+            <h2>Meet <span>Brandi</span>!</h2>
+            <p><span>/creative</span> one page template.</p>
+            <span class="banner__content-border">We are a team of professional</span>
+          </div>
+          <ul>
+            <li>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <i class="fab fa-google-plus-g"></i>
+                
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <i class="fab fa-dribbble"></i>
+                
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/banner-01.png" alt="">
+          <div class="banner__content">
+            <h2>Meet <span>Brandi</span>!</h2>
+            <p><span>/creative</span> one page template.</p>
+            <span class="banner__content-border">We are a team of professional</span>
+          </div>
+          <ul>
+            <li>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <i class="fab fa-google-plus-g"></i>
+                
+              </a>
+            </li>
+            <li>
+              <a href="">
+              <i class="fab fa-dribbble"></i>
+                
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-  </header>
-  <main></main>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+
+
+      
+  </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer">
+           <div class="row">
+             <div class="col-md-3 col-sm-12">
+               <h2>Brandi</h2>
+               <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat.
+               </p>
+             </div>
+             <div class="col-md-3 col-sm-6">
+                <h3>Subscribe</h3>
+                <div class="footer-input">
+                  <input type="text" >
+                  
+                  <a href="#"><img src="assets/img/footer-01.png" alt=""></a>
+                </div>
+                <p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+             </div>
+             <div class="col-md-3 col-sm-6">
+               <h3>Explore</h3>
+               <div class="col-md-6 col-sm-6">
+                 <p>Envato</p>
+                 <p>Themecurve</p>
+                 <p>Kreativeshowcase</p>
+                 <p>Freebiescurve</p>
+               </div>
+               <div class="col-md-6 col-sm-6">
+                 <p>Themeforest</p>
+                 <p>Microsoft</p>
+                 <p>Google</p>
+                 <p>Yahoo</p>
+               </div>
+             </div>
+             <div class="col-md-3 col-sm-12">
+                <div class="footer-margin">a</div>
+                  <p class="footer-margin-bottom footer-border-left">Created with  <img src="assets/img/heart.png" alt="">  by <span class="footer-black">Themecurve,
+                    Exclusive for kreativeshowcase
+                  </span></p>
+                  <p class="footer-border-left footer-black"> © 2014 Brandi . All Rights Reserved</p>
+             </div>
+           </div>
+        </div>
+      </div>
+    </footer>
+  </main>
   <footer></footer>
 
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
