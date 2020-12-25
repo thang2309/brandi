@@ -7908,6 +7908,16 @@ header .header .header__menu ul li a {
   display: none !important;
 }
 
+.top {
+  top: 3px !important;
+}
+
+@media only screen and (max-width: 1160px) {
+  .top {
+    top: 0;
+  }
+}
+
 .title {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -8201,6 +8211,21 @@ footer .footer .footer-black {
   transition: .3s;
 }
 
+@media only screen and (max-width: 767px) {
+  .background-works .works .works__menu .button {
+    padding: 10px 5px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .background-works .works .works__menu .button {
+    font-size: 13px;
+    padding: 10px 5px;
+    margin: 0;
+  }
+}
+
 .background-works .works .works__menu .button.is-checked, .background-works .works .works__menu .button.is-selected {
   background-color: #0eb493;
   color: #fff;
@@ -8221,6 +8246,12 @@ footer .footer .footer-black {
   color: #fff;
 }
 
+@media only screen and (max-width: 767px) {
+  .background-works .works .works__content {
+    min-height: 500px;
+  }
+}
+
 .background-works .works .works__content .grid {
   background: transparent;
   border: none;
@@ -8230,10 +8261,21 @@ footer .footer .footer-black {
   padding: 0;
 }
 
+.background-works .works .works__content .isotope-block-pic {
+  min-height: 280px;
+}
+
 .background-works .works .works__content .isotope-block-pic > img {
   position: relative;
-  height: 100%;
+  min-height: 280px;
   width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .background-works .works .works__content .isotope-block-pic > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .background-works .works .works__content .isotope-block-pic:hover .works__content-hover {

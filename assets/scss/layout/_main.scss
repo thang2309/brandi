@@ -78,6 +78,13 @@
   display: none !important;
 }
 
+.top{
+  top: 3px !important;
+  @media #{$info-tablet-horizontal} {
+    top: 0;
+  }
+}
+
 .title{
   text-align: center;
   font-family: 'Open Sans', sans-serif;

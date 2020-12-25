@@ -34,13 +34,41 @@ $(".regular").slick({
 
 var $grid = $('.grid').isotope({
   itemSelector: '.isotope-item',
-  stagger: 30
+  stagger: 10,
+  
 });
 
+var top1 = document.getElementsByClassName('top1');
+var top2 = document.getElementById('top2');
+var top = document.getElementsByClassName('top');
 $('.filter-button-group').on( 'click', '.button', function() {
   var filterValue = $(this).attr('data-filter');
+  console.log(filterValue);
+  if(filterValue == "*"){
+    $(top1).addClass("top");
+  }
+  else{
+    $(top1).removeClass("top");
+  }
+  if($(window).width() <= 1200 ){
+    $(top1).removeClass("top");
+  }
+    // else{
+    //   top1.removeClass('top');
+    // }
   $grid.isotope({ filter: filterValue });
+
 });
+
+$(window).resize(function(){
+  var width = $(window).width();
+  // console.log(width);
+  if(width <= 1200){
+      $(top1).removeClass("top");
+  }
+})
+
+
 
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
