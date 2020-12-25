@@ -7440,6 +7440,7 @@ body {
   font-size: 16px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: #fff;
 }
 
 .wrapper {
@@ -7464,10 +7465,6 @@ a:hover, a:focus {
 
 * {
   margin: 0;
-}
-
-img {
-  max-width: 100%;
 }
 
 html,
@@ -7697,6 +7694,7 @@ header .header .header__logo span {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   position: relative;
+  color: #546365;
 }
 
 @media only screen and (max-width: 767px) {
@@ -7818,6 +7816,11 @@ header .header .header__menu ul li a {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  outline: none;
+}
+
+header .header .header__menu ul li a:focus {
+  background-color: transparent;
 }
 
 .swiper-container {
@@ -7916,6 +7919,10 @@ header .header .header__menu ul li a {
   .top {
     top: 0;
   }
+}
+
+.margin-top {
+  margin-top: 5px;
 }
 
 .title {
@@ -8183,10 +8190,6 @@ footer .footer .footer-black {
   font-family: 'Open Sans', sans-serif;
 }
 
-.background-works .works .row {
-  margin: 0;
-}
-
 .background-works .works .works__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8197,7 +8200,7 @@ footer .footer .footer-black {
   margin-bottom: 35px;
 }
 
-.background-works .works .works__menu .button {
+.background-works .works .works__menu button {
   border: none;
   color: #000;
   background: #fff;
@@ -8212,81 +8215,37 @@ footer .footer .footer-black {
 }
 
 @media only screen and (max-width: 767px) {
-  .background-works .works .works__menu .button {
+  .background-works .works .works__menu button {
     padding: 10px 5px;
     margin: 0;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .background-works .works .works__menu .button {
+  .background-works .works .works__menu button {
     font-size: 13px;
     padding: 10px 5px;
     margin: 0;
   }
 }
 
-.background-works .works .works__menu .button.is-checked, .background-works .works .works__menu .button.is-selected {
+.background-works .works .works__menu button.is-checked, .background-works .works .works__menu button.is-selected {
   background-color: #0eb493;
   color: #fff;
 }
 
-.background-works .works .works__menu .button:active {
+.background-works .works .works__menu button:active {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.background-works .works .works__menu .button:hover {
+.background-works .works .works__menu button:hover {
   background-color: #118f76;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.background-works .works .works__content {
-  color: #fff;
-}
-
-@media only screen and (max-width: 767px) {
-  .background-works .works .works__content {
-    min-height: 500px;
-  }
-}
-
-.background-works .works .works__content .grid {
-  background: transparent;
-  border: none;
-}
-
-.background-works .works .works__content .col-sm-6, .background-works .works .works__content .col-md-4, .background-works .works .works__content .col-lg-3 {
-  padding: 0;
-}
-
-.background-works .works .works__content .isotope-block-pic {
-  min-height: 280px;
-}
-
-.background-works .works .works__content .isotope-block-pic > img {
-  position: relative;
-  min-height: 280px;
-  width: 100%;
-}
-
-@media only screen and (max-width: 767px) {
-  .background-works .works .works__content .isotope-block-pic > img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-.background-works .works .works__content .isotope-block-pic:hover .works__content-hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.background-works .works .works__content .works__content-hover {
+.background-works .works .works__content-hover {
   position: absolute;
   top: 0;
   display: -webkit-box;
@@ -8301,36 +8260,102 @@ footer .footer .footer-black {
           flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 99.2%;
+  height: 100%;
   background-color: rgba(32, 181, 151, 0.8);
   display: none;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
-.background-works .works .works__content .works__content-hover .works__content__img {
-  margin-bottom: 15px;
+.background-works .works .works__content-hover .works__content__img {
+  margin: 0 auto 15px;
 }
 
-.background-works .works .works__content .works__content-hover img {
+@media only screen and (max-width: 767px) {
+  .background-works .works .works__content-hover .works__content__img {
+    margin: 0 auto 5px;
+  }
+}
+
+.background-works .works .works__content-hover img {
   height: 50px;
   width: 50px;
   border: 1px solid;
-  border-radius: 25px;
+  border-radius: 80px;
   padding: 16px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.background-works .works .works__content .works__content-hover h3 {
+@media only screen and (max-width: 767px) {
+  .background-works .works .works__content-hover img {
+    height: 4vw;
+    width: 4vw;
+    padding: 1vw;
+  }
+}
+
+.background-works .works .works__content-hover h3 {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1vw;
   line-height: 2.3;
 }
 
-.background-works .works .works__content .works__content-hover p {
-  font-size: 13px;
+.background-works .works .works__content-hover p {
+  font-size: .9vw;
   font-weight: 400;
+}
+
+.background-works .works .hidden {
+  display: none;
+}
+
+.background-works .works .height {
+  min-height: 500px;
+}
+
+.background-works .works #filter button:focus {
+  outline: 0;
+}
+
+.background-works .works #filter button.active {
+  background-color: #0eb493;
+}
+
+.background-works .works #posts {
+  margin: 0 auto;
+}
+
+.background-works .works #posts .post {
+  width: 25%;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.background-works .works #posts .post:hover .works__content-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.background-works .works #posts .post > img {
+  position: relative;
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .banner {
