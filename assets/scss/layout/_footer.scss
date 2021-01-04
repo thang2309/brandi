@@ -43,6 +43,10 @@
         color: #d2ede8;
         font-weight: bold;
         font-size: 14px;
+        @media #{$info-phone} {
+          text-align: center;
+          margin-top: 20px;
+        }
       }
       
       h2, h3, .footer-margin{

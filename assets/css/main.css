@@ -8054,6 +8054,13 @@ footer .footer h3 {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 767px) {
+  footer .footer h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
 footer .footer h2, footer .footer h3, footer .footer .footer-margin {
   margin-bottom: 45px;
 }
