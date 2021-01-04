@@ -3,9 +3,11 @@
 
   img{
     width: 100%;
+    min-height: 350px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
     position: relative;
   }
   .banner__content{
@@ -13,19 +15,23 @@
     color: #fff;
     bottom: 22%;
     h2{
-      font-size: 4.2vw;
+      font-size: 62px;
       font-weight: 300;
+      @media #{$info-phone} {
+        font-size: 30px;
+      }
       span{
         font-weight: bold;
       }
     }
     p{
-      font-size: 4vw;
+      font-size: 48px;
       font-weight: 300;
       line-height: 1.5;
       padding-bottom: 15px;
       @media #{$info-phone} {
         padding-bottom: 0;
+        font-size: 25px;
       }
       span{
         color: $text-banner;
@@ -33,7 +39,11 @@
     }
     .banner__content-border{
       position: relative;
-      font-size: 1.8vw;
+      font-size: 18px;
+      font-weight: 300;
+      @media #{$info-phone} {
+        font-size: 13px;
+      }
       &::before{
         content: '';
         position: absolute;
@@ -45,7 +55,6 @@
         @media #{$info-phone} {
           width: 15px;
           left: -20%;
-
         }
       } 
       &::after{
@@ -59,10 +68,8 @@
         @media #{$info-phone} {
           width: 15px;
           right:  -20%;
-
         }
       }
-      
     }
   }
   ul{

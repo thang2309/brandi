@@ -136,6 +136,8 @@ header{
             top: 0;
             height: 2px;
             left: 0;
+            transition: .4s all;
+            transition-delay: .2s;
           }
           &:hover::before{
             width: 100%;
