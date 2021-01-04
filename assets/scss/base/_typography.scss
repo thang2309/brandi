@@ -4,7 +4,7 @@ body {
     font-size: 16px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    
+    background-color: #fff;
     // @media #{$res1024} {
     //     .banner .banner__content .banner__content__top {
     //         p {
@@ -16,7 +16,9 @@ body {
     //     }
     // }
 }
-
+main{
+  font-family: 'Open Sans', sans-serif;
+}
 .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -68,6 +68,7 @@ header{
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         position: relative;
+        color: #546365;
         @media #{$info-phone} {
           display: none;
         }
@@ -135,6 +136,8 @@ header{
             top: 0;
             height: 2px;
             left: 0;
+            transition: .4s all;
+            transition-delay: .2s;
           }
           &:hover::before{
             width: 100%;
@@ -147,6 +150,10 @@ header{
             align-items: center;
             display: flex;
             height: 100%;
+            outline: none;
+            &:focus{
+              background-color: transparent;
+            }
           }
         }
       }
