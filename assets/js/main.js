@@ -32,6 +32,37 @@ $(".regular").slick({
 });
 
 
+
+$(".regular1").slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1200, // tablet breakpoint
+      settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+      }
+    },
+    {
+        breakpoint: 980, // tablet breakpoint
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+        }
+    },
+    {
+        breakpoint: 640, // mobile breakpoint
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+]
+});
+
 // var $grid = $('.grid').isotope({
 //   itemSelector: '.isotope-item',
 //   stagger: 10,
@@ -100,6 +131,7 @@ $(document).ready(function(){
          var filter = $(this).attr('class');         
 
       if ( $(this).attr('class') == 'all' ) {
+        // $('#posts').addClass('height');
          $('.hidden').contents().appendTo('#posts').hide().fadeIn("200");
          $( "#filter button" ).removeClass('active');
          $(this).addClass('active');

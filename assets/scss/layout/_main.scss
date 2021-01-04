@@ -67,12 +67,24 @@
     color: transparent;
   }
 }
-.slick-dots{
-  bottom: -75%;
-  @media #{$info-tablet-horizontal} {
-    bottom: -50%;
+
+.background-features{
+  .slick-dots{
+    bottom: -75%;
+    @media #{$info-tablet-horizontal} {
+      bottom: -50%;
+    }
   }
 }
+.team{
+  .slick-dots{
+    bottom: -20%;
+  }
+  .slick-slide{
+    text-align: center;
+  }
+}
+
 
 .slick-next , .slick-prev {
   display: none !important;
@@ -110,6 +122,7 @@
        width: 20px;
        height: 15px;
        background-size: cover;
+       object-fit: none;
     }
   }
  
@@ -123,5 +136,12 @@
     @media #{$info-phone} {
       padding: 0 20px;
     }
+  }
+}
+
+.background-features , .team {
+  padding: 95px 0;
+  @media #{$info-phone} {
+    padding: 50px 0;
   }
 }
