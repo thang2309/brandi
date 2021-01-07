@@ -113,7 +113,7 @@
         width: 100%;
         height: 100%;
         background-color: rgba($color: #20b597, $alpha: .8);
-        display: none;
+        opacity: 0;
         transition: .4s;
         .works__content__img{
           margin: 0 auto 15px;
@@ -201,6 +201,7 @@
   &:hover{
     .works__content-hover{
       display: flex;
+      opacity: 1;
     }
   }
 }
