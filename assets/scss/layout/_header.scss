@@ -5,7 +5,7 @@ header{
     z-index: 10;
   .header{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 70px;
     align-items: center;
     @media #{$info-phone} {
