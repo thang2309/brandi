@@ -8020,6 +8020,8 @@ footer .footer {
       grid-template-columns: repeat(4, 25%);
   max-width: 1200px;
   margin: auto;
+  gap: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -8082,7 +8084,7 @@ footer .footer .footer__explore a {
   font-weight: 400;
   font-size: 13px;
   line-height: 2;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   display: block;
   -webkit-transition: .4s;
   transition: .4s;
@@ -8161,7 +8163,6 @@ footer .footer .footer-margin-bottom {
 footer .footer .footer-input {
   position: relative;
   margin: 5px 0 30px 0;
-  padding-right: 20px;
 }
 
 footer .footer .footer-input input {
@@ -8178,13 +8179,13 @@ footer .footer .footer-input input {
 footer .footer .footer-input img {
   position: absolute;
   top: 36%;
-  right: 15%;
+  right: 10%;
   cursor: pointer;
 }
 
 footer .footer .footer-border-left {
   border-left: 1px solid #177e72;
-  padding-left: 15px;
+  padding: 0 22px;
 }
 
 footer .footer .footer-black {
