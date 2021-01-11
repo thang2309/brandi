@@ -8634,7 +8634,6 @@ footer .footer .footer-black {
 
 .discuss {
   padding-top: 90px;
-  color: #000;
 }
 
 .discuss .discuss__content {
@@ -8657,6 +8656,21 @@ footer .footer .footer-black {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }
+}
+
+.discuss .discuss__content h3 {
+  font-size: 23px;
+  margin-bottom: 40px;
+}
+
+.discuss .discuss__content p {
+  color: #6a737b;
+  padding-right: 70px;
+  font-size: 13px;
+}
+
+.discuss .discuss__content h3, .discuss .discuss__content p {
+  line-height: 1.5;
 }
 
 .discuss .discuss__content .discuss__content-center {
@@ -8687,21 +8701,6 @@ footer .footer .footer-black {
   .discuss .discuss__content .discuss__content-center h2 {
     margin-top: 15px;
   }
-}
-
-.discuss h3 {
-  font-size: 23px;
-  margin-bottom: 40px;
-}
-
-.discuss p {
-  color: #6a737b;
-  padding-right: 70px;
-  font-size: 13px;
-}
-
-.discuss h3, .discuss p {
-  line-height: 1.5;
 }
 
 .discuss .discuss__input {

@@ -381,7 +381,18 @@
     @media #{$info-tablet-vertical} {
       grid-template-columns: auto;
     }
-    
+    h3{
+      font-size: 23px;
+      margin-bottom: 40px;
+    }
+    p{
+      color: #6a737b;
+      padding-right: 70px;
+      font-size: 13px;
+    }
+    h3,p{
+      line-height: 1.5;
+    }
     .discuss__content-center{
       width: 95%;
       margin: auto;
@@ -403,19 +414,7 @@
     }
   }
   
-  color: #000;
-  h3{
-    font-size: 23px;
-    margin-bottom: 40px;
-  }
-  p{
-    color: #6a737b;
-    padding-right: 70px;
-    font-size: 13px;
-  }
-  h3,p{
-    line-height: 1.5;
-  }
+  
   
   .discuss__input{
     display: flex;
