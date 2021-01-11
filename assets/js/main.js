@@ -33,7 +33,7 @@ $(".regular").slick({
 
 
 
-$(".regular1").slick({
+$(".regular-01").slick({
   dots: true,
   infinite: true,
   slidesToShow: 4,

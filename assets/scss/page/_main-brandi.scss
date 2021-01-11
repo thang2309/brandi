@@ -3,9 +3,13 @@
   background-color: #f4f7f9;
 
 .features{
-  margin: 60px 0 50px 0;
+  margin: 60px auto 50px auto;
+  max-width: 1200px;
   .features__content{
     display: flex !important;
+    @media #{$info-tablet-horizontal} {
+      padding: 0 20px;
+    }
     .col-md-2{
       padding: 0;
     }
@@ -18,7 +22,7 @@
       border-radius: 30px;
       height: 45px;
       width: 45px;
-      margin-top: 3px;
+      margin: 3px 0 0 15px;
       @media #{$info-tablet-horizontal} {
         margin: auto;
       }
@@ -26,19 +30,22 @@
         margin: auto;
         background-size: cover;
         object-fit: none;
-        padding: 12px 0
+        padding: 12px 0;
       }
     }
     .features__content__text{
       font-family: 'Open Sans', sans-serif;
+      width:90%;
+      padding-left: 20px;
+      
       h2{
         font-weight: 600;
        font-size: 20px;
        margin-bottom: 25px;
        color: #000;
-       @media #{$info-tablet-horizontal} {
-         text-align: center;
-       }
+      //  @media #{$info-tablet-horizontal} {
+      //    text-align: center;
+      //  }
       }
       p{
         font-weight: 400;
@@ -115,7 +122,7 @@
         background-color: rgba($color: #20b597, $alpha: .8);
         opacity: 0;
         transition: .4s;
-        .works__content__img{
+        img{
           margin: 0 auto 15px;
           @media #{$info-phone} {
               margin: 0 auto 5px;
@@ -225,6 +232,8 @@
 // team
 .team{
   font-family: 'Open Sans', sans-serif;
+  max-width: 1200px;
+  margin: auto;
   .team__content{
     .team__content__card{
       text-align: center;
@@ -316,20 +325,38 @@
   color: #fff;
   .facts{
     text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    @media #{$info-tablet-horizontal} {
+      grid-template-columns: repeat(2, 50%);
+    }
     .facts__img{
       border: 2px solid #7f8a91;
       border-radius: 80px;
       width: 130px;
       height: 130px;
       margin:10px auto;
+      @media #{$info-phone} {
+        width: 100px;
+        height: 100px;
+      }
     }
     img{
       padding: 45px;
+      @media #{$info-phone} {
+        padding: 28px;
+      }
     }
     h3{
       font-size: 60px;
       font-weight: 600;
       margin: 40px 0 10px 0;
+      @media #{$info-phone} {
+        font-size: 40px;
+        margin: 20px 0 10px 0;
+      }
     }
     p{
       font-size: 18px;
@@ -342,7 +369,40 @@
 // discuss
 .discuss{
   padding-top: 90px;
-  .container{
+  
+  .discuss__content{
+    display: grid;
+    grid-template-columns: 260px auto 60px;
+    max-width: 1200px;
+    margin: auto;
+    @media #{$info-tablet-horizontal} {
+      margin: 0 20px;
+    }
+    @media #{$info-tablet-vertical} {
+      grid-template-columns: auto;
+    }
+    
+    .discuss__content-center{
+      width: 95%;
+      margin: auto;
+      @media #{$info-tablet-horizontal} {
+        width: 100%;
+        padding: 0 15px;
+      }
+      @media #{$info-tablet-vertical} {
+        margin: auto;
+        padding:0;
+      }
+      h2{
+        font-size: 26px;
+        font-weight: bold;
+        @media #{$info-tablet-vertical} {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  
   color: #000;
   h3{
     font-size: 23px;
@@ -356,13 +416,7 @@
   h3,p{
     line-height: 1.5;
   }
-  h2{
-    font-size: 26px;
-    font-weight: bold;
-    @media #{$info-tablet-vertical} {
-      margin-top: 15px;
-    }
-  }
+  
   .discuss__input{
     display: flex;
     justify-content: space-between;
@@ -409,9 +463,10 @@
     
   }
   .discuss__icon{
-    display: table-caption;
+    display: grid;
     line-height: 2.7;
     cursor: pointer;
+    grid-template-rows: repeat(6 ,45px);  
     @media #{$info-tablet-vertical} {
       display: flex;
       img{
@@ -440,4 +495,3 @@
      bottom: 0;
    }
  }
-}
