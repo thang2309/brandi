@@ -12,7 +12,6 @@
       grid-template-columns: repeat(4, 25%);
       max-width: 1200px;
       margin: auto;
-      gap:5px;
       font-family: 'Open Sans', sans-serif;
 
       & > div:first-child{
@@ -26,6 +25,12 @@
         p{
           padding-right: 22px;
         }
+      }
+      & > div:last-child{
+        & > p:not(:last-child){
+            border-left: 1px solid #177e72;
+        }
+       
       }
      
       @media #{$info-tablet-vertical} {
@@ -162,12 +167,14 @@
       //     // }
       //   }
       // }
-      .footer-border-left{
-        border-left: 1px solid #177e72;
-        padding: 0 22px;
-      }
+
+     
       .footer-black{
         color: #000;
+      }
+      .footer-border-left
+      {
+        padding: 0 22px;
       }
     }
   }

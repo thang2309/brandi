@@ -7656,6 +7656,9 @@ header .header #chk {
   position: absolute;
   visibility: hidden;
   z-index: -111;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
 header .header #chk:checked ~ .header__menu {
@@ -7735,20 +7738,6 @@ header .header .header__menu {
     transition: 0.7s;
     z-index: 2;
     margin-left: 0;
-    padding: 180px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    -ms-flex-item-align: center;
-        align-self: center;
   }
 }
 
@@ -7766,7 +7755,13 @@ header .header .header__menu ul {
 
 @media only screen and (max-width: 767px) {
   header .header .header__menu ul {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -7789,6 +7784,7 @@ header .header .header__menu ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 15px 0 !important;
   }
 }
 
@@ -8020,7 +8016,6 @@ footer .footer {
       grid-template-columns: repeat(4, 25%);
   max-width: 1200px;
   margin: auto;
-  gap: 5px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -8038,6 +8033,10 @@ footer .footer {
 
 footer .footer > div:first-child p {
   padding-right: 22px;
+}
+
+footer .footer > div:last-child > p:not(:last-child) {
+  border-left: 1px solid #177e72;
 }
 
 @media only screen and (max-width: 992px) {
@@ -8183,13 +8182,12 @@ footer .footer .footer-input img {
   cursor: pointer;
 }
 
-footer .footer .footer-border-left {
-  border-left: 1px solid #177e72;
-  padding: 0 22px;
-}
-
 footer .footer .footer-black {
   color: #000;
+}
+
+footer .footer .footer-border-left {
+  padding: 0 22px;
 }
 
 .background-features {
@@ -8440,7 +8438,7 @@ footer .footer .footer-black {
 
 @media only screen and (max-width: 1200px) {
   .background-works .works #posts .post {
-    width: calc(100%/2);
+    width: calc(100%/3);
   }
 }
 

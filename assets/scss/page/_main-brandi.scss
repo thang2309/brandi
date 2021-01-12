@@ -202,7 +202,7 @@
   position: relative;
   z-index: 1;
   @media #{$info-tablet-horizontal} {
-    width: calc(100%/2);
+    width: calc(100%/3);
   }
   
   &:hover{
