@@ -7656,6 +7656,9 @@ header .header #chk {
   position: absolute;
   visibility: hidden;
   z-index: -111;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
 header .header #chk:checked ~ .header__menu {
@@ -7735,20 +7738,6 @@ header .header .header__menu {
     transition: 0.7s;
     z-index: 2;
     margin-left: 0;
-    padding: 180px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    -ms-flex-item-align: center;
-        align-self: center;
   }
 }
 
@@ -7766,7 +7755,13 @@ header .header .header__menu ul {
 
 @media only screen and (max-width: 767px) {
   header .header .header__menu ul {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -7789,6 +7784,7 @@ header .header .header__menu ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 15px 0 !important;
   }
 }
 
@@ -7951,6 +7947,12 @@ header .header .header__menu ul li a:focus {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 767px) {
+  .title h2 {
+    font-size: 25px;
+  }
+}
+
 .title .title__img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7990,6 +7992,7 @@ header .header .header__menu ul li a:focus {
 @media only screen and (max-width: 767px) {
   .title p {
     padding: 0 20px;
+    font-size: 15px;
   }
 }
 
@@ -8020,6 +8023,7 @@ footer .footer {
       grid-template-columns: repeat(4, 25%);
   max-width: 1200px;
   margin: auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -8036,6 +8040,10 @@ footer .footer {
 
 footer .footer > div:first-child p {
   padding-right: 22px;
+}
+
+footer .footer > div:last-child > p:not(:last-child) {
+  border-left: 1px solid #177e72;
 }
 
 @media only screen and (max-width: 992px) {
@@ -8082,7 +8090,7 @@ footer .footer .footer__explore a {
   font-weight: 400;
   font-size: 13px;
   line-height: 2;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   display: block;
   -webkit-transition: .4s;
   transition: .4s;
@@ -8117,9 +8125,9 @@ footer .footer h3 {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   footer .footer h3 {
-    text-align: center;
+    font-size: 17px;
     margin-top: 20px;
   }
 }
@@ -8128,7 +8136,7 @@ footer .footer h2, footer .footer h3, footer .footer .footer-margin {
   margin-bottom: 45px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   footer .footer h2, footer .footer h3, footer .footer .footer-margin {
     margin-bottom: 25px;
   }
@@ -8161,7 +8169,6 @@ footer .footer .footer-margin-bottom {
 footer .footer .footer-input {
   position: relative;
   margin: 5px 0 30px 0;
-  padding-right: 20px;
 }
 
 footer .footer .footer-input input {
@@ -8178,17 +8185,16 @@ footer .footer .footer-input input {
 footer .footer .footer-input img {
   position: absolute;
   top: 36%;
-  right: 15%;
+  right: 10%;
   cursor: pointer;
-}
-
-footer .footer .footer-border-left {
-  border-left: 1px solid #177e72;
-  padding-left: 15px;
 }
 
 footer .footer .footer-black {
   color: #000;
+}
+
+footer .footer .footer-border-left {
+  padding: 0 22px;
 }
 
 .background-features {
@@ -8247,6 +8253,12 @@ footer .footer .footer-black {
   font-family: 'Open Sans', sans-serif;
   width: 90%;
   padding-left: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .background-features .features .features__content .features__content__text {
+    padding-left: 10px;
+  }
 }
 
 .background-features .features .features__content .features__content__text h2 {
@@ -8439,6 +8451,12 @@ footer .footer .footer-black {
 
 @media only screen and (max-width: 1200px) {
   .background-works .works #posts .post {
+    width: calc(100%/3);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .background-works .works #posts .post {
     width: calc(100%/2);
   }
 }
@@ -8609,7 +8627,7 @@ footer .footer .footer-black {
 
 @media only screen and (max-width: 767px) {
   .background-facts .facts img {
-    padding: 28px;
+    padding: 25px;
   }
 }
 
@@ -8621,7 +8639,7 @@ footer .footer .footer-black {
 
 @media only screen and (max-width: 767px) {
   .background-facts .facts h3 {
-    font-size: 40px;
+    font-size: 35px;
     margin: 20px 0 10px 0;
   }
 }

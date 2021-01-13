@@ -33,6 +33,9 @@ header{
         position: absolute;
         visibility: hidden;
         z-index: -111;
+        top: 0;
+        left: 0;
+        opacity: 0;
     }
     #chk:checked~.header__menu {
         right: 0;
@@ -99,12 +102,12 @@ header{
           transition: 0.7s;
           z-index: 2;
           margin-left: 0;
-          padding: 180px 0;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          align-self: center;
+          // padding: 180px 0;
+          // display: flex;
+          // flex-direction: column;
+          // align-items: center;
+          // text-align: center;
+          // align-self: center;
       }
       ul{
         display: flex;
@@ -112,7 +115,8 @@ header{
         align-self: center;
         height: 100%;
         @media #{$info-phone} {
-          display: block;
+          flex-direction: column;
+          justify-content: center;
         }
         li{
           font-size: 13px;
@@ -127,6 +131,7 @@ header{
             font-size: 18px;
             display: flex;
             justify-content: center;
+            margin: 15px 0 !important;
           }
           &::before{
             content: '';

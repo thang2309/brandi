@@ -152,6 +152,19 @@ $(document).ready(function(){
 
   });
 
+  $('.header__menu a').on('click',function(e){
+    var href = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(href).offset().top
+    },500);
+
+    e.preventDefault();
+  });
+
+
+
 });
 
  
+
