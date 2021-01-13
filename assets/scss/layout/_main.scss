@@ -107,6 +107,9 @@
     color: $title;
     font-size: 28px;
     font-weight: 800;
+    @media #{$info-phone} {
+      font-size: 25px;
+    }
   }
   .title__img{
     display: flex;
@@ -135,6 +138,7 @@
     line-height: 1.5;
     @media #{$info-phone} {
       padding: 0 20px;
+      font-size: 15px;
     }
   }
 }

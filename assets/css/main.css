@@ -7947,6 +7947,12 @@ header .header .header__menu ul li a:focus {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 767px) {
+  .title h2 {
+    font-size: 25px;
+  }
+}
+
 .title .title__img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7986,6 +7992,7 @@ header .header .header__menu ul li a:focus {
 @media only screen and (max-width: 767px) {
   .title p {
     padding: 0 20px;
+    font-size: 15px;
   }
 }
 
@@ -8118,9 +8125,9 @@ footer .footer h3 {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   footer .footer h3 {
-    text-align: center;
+    font-size: 17px;
     margin-top: 20px;
   }
 }
@@ -8129,7 +8136,7 @@ footer .footer h2, footer .footer h3, footer .footer .footer-margin {
   margin-bottom: 45px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   footer .footer h2, footer .footer h3, footer .footer .footer-margin {
     margin-bottom: 25px;
   }
@@ -8246,6 +8253,12 @@ footer .footer .footer-border-left {
   font-family: 'Open Sans', sans-serif;
   width: 90%;
   padding-left: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .background-features .features .features__content .features__content__text {
+    padding-left: 10px;
+  }
 }
 
 .background-features .features .features__content .features__content__text h2 {
@@ -8442,6 +8455,12 @@ footer .footer .footer-border-left {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .background-works .works #posts .post {
+    width: calc(100%/2);
+  }
+}
+
 .background-works .works #posts .post:hover .works__content-hover {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8608,7 +8627,7 @@ footer .footer .footer-border-left {
 
 @media only screen and (max-width: 767px) {
   .background-facts .facts img {
-    padding: 28px;
+    padding: 25px;
   }
 }
 
@@ -8620,7 +8639,7 @@ footer .footer .footer-border-left {
 
 @media only screen and (max-width: 767px) {
   .background-facts .facts h3 {
-    font-size: 40px;
+    font-size: 35px;
     margin: 20px 0 10px 0;
   }
 }

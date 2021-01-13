@@ -95,15 +95,18 @@
         color: #d2ede8;
         font-weight: bold;
         font-size: 14px;
-        @media #{$info-phone} {
-          text-align: center;
+        @media #{$info-tablet-vertical} {
+          font-size: 17px;
           margin-top: 20px;
+
+        }
+        @media #{$info-phone} {
         }
       }
       
       h2, h3, .footer-margin{
          margin-bottom: 45px;
-         @media #{$info-phone} {
+         @media #{$info-tablet-vertical} {
           margin-bottom: 25px;
          }
       }
